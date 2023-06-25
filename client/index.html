@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="utf-8">
+		<title>library</title>
+		<link rel="stylesheet" href="../boostrapcss/bootstrap.css">
+		<link rel="stylesheet" href="../css/all.css">
+        <script src="../boostrapjs/bootstrap.bundle.min.js"></script>
+		<link rel="stylesheet" href="index.css">
+		<script type="module" src="index.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+
+    <header>
+        <img src="../images/logo_book.png" alt="logo">
+        <h1>librery</h1>
+    </header>
+
+    <main>
+			<!-- Menu des requetess -->
+			<section class="filtres">
+				<div id="b1">
+					<div class="h">
+						<p>Search...</p>
+						<p>result: 102</p>
+					</div>
+					<form>
+					  <div class="search">
+					    <input type="text" placeholder="title" name="title">
+					    <input type="text" placeholder="Category" name="Category">
+					    <input type="text" placeholder="authors" name="authors">
+					    <input type="text" placeholder="Published Date" name="date">
+					  </div>
+					  <div class="f">
+					    <button id="findbook">Search</button>
+					    <button type="reset">Reset</button>
+					  </div>
+				    </form>
+				</div>
+				<div class="sublogo">
+					<div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
+						<div class="modal-dialog">
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <h5 class="modal-title" id="enrolllabel">Modal title</h5>
+							  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								   <form method="put" class="formupdate">
+										 <div class="mb-3">
+											   <label for="title" class="col-form-label">title:</label>
+											   <input type="text" name="Uptitle" class="form-control">
+										  </div>
+										  <div class="mb-3">
+											   <label for="category" class="col-form-label">category: </label>
+											   <input type="text" name="Upcategory"  class="form-control">
+										  </div>
+										   <div class="mb-3"> 
+											   <label for="authors" class="col-form-label">authors:</label>
+											   <input type="text"  name="Upauthors"  class="form-control">
+										   </div>
+											<div class="mb-3">    
+											   <label for="pagecount" class="col-form-label">pagecount:</label>
+											   <input type="number" name="Upagecount" class="form-control">
+											</div>
+										   <div class="mb-3">    
+											  <label for="date" class="col-from-label">Publishedate: </label>
+											  <input type="text" name="Update" class="form-control">
+											</div>
+											<div class="mb-3">    
+												<label for="status" class="col-from-label">status: </label>
+												<input type="text" name="Upstatus"  class="form-control">
+											</div>
+											 <div class="modal-footer">
+												 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+												 <input type="submit" class="btn btn-primary" value="Save change"></button>
+											</div>
+									</form>
+							</div>
+						  </div>
+						</div>
+					  </div>
+				</div>
+			</div>
+			</section>
+            
+			<!-- books -->
+			<section class="fiches">
+			</section>
+
+	</main>
+
+</body>
+
+</html>

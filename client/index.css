@@ -1,0 +1,151 @@
+body {
+	
+	margin: auto;
+	padding: 13px;
+	font-family: 'Montserrat', sans-serif;
+}
+header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 10px;
+	padding: 3px;
+	background-color: #337ac6;
+	text-align: center;
+	color: white;
+}
+header img {
+	height: 40px;
+	margin-left: 1rem;
+}
+header h1 {
+	flex-grow: 1;
+}
+main {
+	display: flex;
+	flex-direction: row;
+}
+
+.filtres {
+	border-radius: 4px;
+	box-shadow: 0px 0px 4px gray;
+	margin: 8px;
+	padding: 8px;
+	min-width: 300px;
+	min-height: 60px;
+	display: flex;
+	flex-direction: column;
+}
+.filtres h3 {
+	text-align: center;
+}
+
+.fiches {
+	flex: 1;
+	margin: 8px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 4px;
+}
+
+.fiches dev{
+	border: 1px solid black;
+	display: flex;
+	flex-direction: column;
+}
+
+.fiches dev header{
+	padding: 3px;
+	min-width: 120px;
+	min-height: 60px;
+	background-color: lightgrey;
+	margin-bottom: 3px;
+	
+}
+
+.fiches dev header img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-height: 50px;
+}
+
+.fiches dev dev{
+	padding: 4px;
+	flex: 1;
+	border: none;
+	margin: 0;
+}
+
+.fiches dev dev h4{
+	text-align: center;
+	color: #518ceb;
+}
+.fiches dev dev p{
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+.fiches dev dev p a{
+	padding: 1px;
+	color: blue;
+	outline: none;
+	text-decoration: none;
+}
+
+#b1 {
+	width: 300px;
+	margin: 0 auto;
+	padding-bottom: 9px;
+	border-top:0;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 1px solid black;
+  }
+  
+ 
+.h{
+	padding: 5px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	
+}
+.h p{
+	margin-right: 8px;
+}
+.f{
+	padding: 6px;
+}
+  .search {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 4px;
+  }
+  
+  .search input[type="text"] {
+	padding: 8px;
+	margin-right: 10px;
+	margin-bottom: 5px;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+  }
+  
+  button {
+	padding: 8px;
+	border-radius: 4px;
+	border: none;
+	background-color: #007185;
+	color: #fff;
+	margin-right: 10px;
+	cursor: pointer;
+  }
+  .ficon1{
+	float: right;
+	margin-right: 9px;
+	color: black;
+  }
+  .ficon2{
+	float: right;
+	margin-right: 9px;
+	color: black;
+  }
